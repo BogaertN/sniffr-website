@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniffer - Adventure Together</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐾 Sniffer</h1>
+        <p class="tagline">Explore. Train. Adventure. Heal. Grow. Together.</p>
+    </header>
+
+    <section class="about">
+        <h2>About Sniffer</h2>
+        <p>Sniffer is the first adventure, training, healthcare, and memory platform built for dogs and their families. Track adventures, play XP games, train together, connect with vets and groomers, and build a legacy with your best friend.</p>
+    </section>
+
+    <section class="coming-soon">
+        <h2>Coming Soon</h2>
+        <p>Launching in 2025 for dogs and owners who believe in real adventures, real loyalty, and real love.</p>
+    </section>
+
+    <section class="join">
+        <h2>Join the Pack</h2>
+        <form>
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Sniffer Inc. | Built with heart.</p>
+    </footer>
+
+</body>
+</html>
