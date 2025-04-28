@@ -250,3 +250,35 @@ button:hover, input[type="email"]:hover {
 .site-footer {
     background: linear-gradient(to right, #333, #555);
 }
+/* Social Links Styling */
+.social-links {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-links a {
+    color: #11998e;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0c7c6b;
+}
+
+/* Kickstarter Button */
+.kickstarter-button {
+    margin-top: 40px;
+}
+
+.kickstarter-button .hero-button {
+    background: #f6b93b;
+    color: white;
+    font-size: 20px;
+}
+
+.kickstarter-button .hero-button:hover {
+    background: #e58e26;
+}
