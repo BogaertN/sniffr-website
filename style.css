@@ -1,133 +1,252 @@
-/* style.css for Sniffer */
-
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Container */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* Containers */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-/* Header */
-.main-header {
-    background-color: #4CAF50;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #38ef7d, #11998e);
     color: white;
-    padding: 60px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
-.main-header h1 {
-    font-size: 64px;
-    margin-bottom: 10px;
+.hero h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
-.main-header .tagline {
-    font-size: 22px;
+.hero-tagline {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin-bottom: 30px;
     font-weight: 300;
 }
 
-/* Sections */
-section {
-    padding: 60px 20px;
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
     background: white;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #11998e;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* About, Coming Soon, Join Sections */
-.about h2, .coming-soon h2, .join h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #4CAF50;
+.hero-button:hover {
+    background: #11998e;
+    color: white;
 }
 
-.about p, .coming-soon p, .join p {
-    font-size: 18px;
+/* General Section Styles */
+section {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.alt-background {
+    background-color: #f0f9f7;
+}
+
+section h2 {
+    font-size: 42px;
+    color: #11998e;
     margin-bottom: 20px;
+    font-weight: 900;
+}
+
+section p {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: #555;
 }
-/* Signup Form */
+/* Features Section */
+.feature-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.feature-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Form Styles (Join the Pack Form) */
 form {
-    margin-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 input[type="email"] {
-    padding: 12px;
-    width: 70%;
-    max-width: 350px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+    padding: 15px;
+    width: 300px;
+    max-width: 100%;
+    border: 2px solid #11998e;
+    border-radius: 8px;
+    font-size: 18px;
 }
 
 button {
-    padding: 12px 24px;
-    background-color: #4CAF50;
+    padding: 15px 25px;
+    background-color: #11998e;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-/* Features Section */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.feature-item {
-    background-color: #e7f5e6;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.feature-item:hover {
-    background-color: #d4edda;
-    transform: translateY(-8px);
-}
-
-.feature-item h3 {
-    font-size: 26px;
-    color: #4CAF50;
-    margin-bottom: 15px;
-}
-
-.feature-item p {
-    font-size: 16px;
-    color: #555;
+    background-color: #0c7c6b;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 20px;
+    background: #333;
+    color: #f0f0f0;
     text-align: center;
+    padding: 40px 20px;
     margin-top: 60px;
-    font-size: 14px;
+}
+
+.site-footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+    
+    .hero-tagline {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+/* Section Dividers */
+section::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #11998e;
+    margin: 40px auto 0;
+    border-radius: 2px;
+}
+
+/* Subtle Animation Effects */
+.feature-section {
+    animation: fadeInUp 1.2s ease both;
+}
+
+.hero-content {
+    animation: fadeInDown 1.2s ease both;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Small Hover Animations */
+.feature-section h2:hover {
+    color: #0c7c6b;
+    transition: color 0.4s ease;
+}
+
+input[type="email"]:focus, button:focus {
+    outline: 3px solid #38ef7d;
+}
+
+/* Adventure Feed Floating Effect */
+#adventure-feed {
+    position: relative;
+    animation: floatFeed 6s ease-in-out infinite;
+}
+
+@keyframes floatFeed {
+    0%, 100% {
+        top: 0px;
+    }
+    50% {
+        top: -10px;
+    }
+}
+
+/* Rainbow Bridge Special Glow */
+#rainbow-bridge {
+    background: linear-gradient(to top right, #ffe0ec, #f0f9f7);
+}
+
+/* Final Touches */
+button:hover, input[type="email"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.site-footer {
+    background: linear-gradient(to right, #333, #555);
 }
