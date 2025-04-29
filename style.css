@@ -267,6 +267,22 @@ button:hover, input[type="email"]:hover {
 .social-links a:hover {
     color: #0c7c6b;
 }
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #11998e;
+    font-size: 32px;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0c7c6b;
+}
 
 /* Kickstarter Button */
 .kickstarter-button {
